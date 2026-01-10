@@ -8,15 +8,6 @@ layout: default
 
   <main class="profile">
 
-    <section class="hard-skills">
-      <h2>Hard skills</h2>
-      <ul>
-        {% for skill in page.hard_skills %}
-        <li>{{ skill }}</li>
-        {% endfor %}
-      </ul>
-    </section>
-
     <section class="academic-background">
       <h2>Academic background</h2>
 
@@ -44,6 +35,15 @@ layout: default
         <p>{{ exp.Description }}</p>
       </article>
       {% endfor %}
+    </section>
+
+    <section class="hard-skills">
+      <h2>Hard skills</h2>
+      <ul>
+        {% for skill in page.hard_skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
     </section>
 
   </main>
